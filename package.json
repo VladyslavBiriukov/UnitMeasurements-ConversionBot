@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "prepublishOnly": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

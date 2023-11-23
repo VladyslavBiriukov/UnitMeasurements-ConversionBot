@@ -12,12 +12,12 @@ const start = () => {
     ]);
 
     bot.on('message', async msg => {
-        console.log(msg);
+        // console.log(msg);
         const text = msg.text;
         const chatId = msg.chat.id;
 
         if (text === '/start') {
-            
+            await bot.sendSticker(chatId, 'https://tlgrm.ru/_/stickers/6be/bac/6bebac93-1f42-4f06-972d-be9211de33f2/8.webp');
             return bot.sendMessage(chatId, 'Hi, choose an option:', {
                 reply_markup: {
                     inline_keyboard: [
@@ -122,3 +122,4 @@ const performConversion = (conversionType, value) => {
 };
 
 start();
+
