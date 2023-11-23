@@ -1,0 +1,17 @@
+{
+  "name": "UnitMeasurementsСonversionBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "prepublishOnly": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "nodemon": "^3.0.1"
+  }
+}
