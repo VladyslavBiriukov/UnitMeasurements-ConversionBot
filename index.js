@@ -1,8 +1,7 @@
 const TelegramApi = require('node-telegram-bot-api');
+require('dotenv').config();
 
-const token = '6327113627:AAE8Tb2HR-FZh9Jm79R8GDaman2PYiiKFrs';
-
-const bot = new TelegramApi(token, { polling: true });
+const bot = new TelegramApi(process.env.BOT_TOKEN, { polling: true });
 
 const users = {}; // Holds information about current users
 
